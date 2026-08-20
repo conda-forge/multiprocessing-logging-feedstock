@@ -1,5 +1,5 @@
 {% set name = "multiprocessing-logging" %}
-{% set version = "0.3.4" %}
+{% set version = "0.4.0" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://github.com/jruere/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 47f68007ceca4d385166f7214e957148e0262814c64bac892ebe5f2da7593fa3
+  sha256: 9346ffdcc7aad97b40dfc4cd6f2faffec2c973197b4f18c6e482d9ec310a3d63
 
 build:
-  number: 2
+  number: 0
   script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
   noarch: python
 
